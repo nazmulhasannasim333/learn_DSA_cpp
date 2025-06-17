@@ -3,13 +3,16 @@ using namespace std;
 
 int main()
 {
-    int n;                            // ----> O(1)
-    cin >> n;                         // ----> O(1)
-    for (int i = 1; i < sqrt(n); i++) // ----> O(sqrt(n))
+    int n;                             // ----> O(1)
+    cin >> n;                          // ----> O(1)
+    for (int i = 1; i <= sqrt(n); i++) // ----> O(sqrt(n))
     {
-        cout << i << endl;
+        if (n % i == 0)
+        {
+            cout << i << " " << n / i << " ";
+        }
     }
-    return 0; // ----> O(1)
+    return 0;
 }
 
 // Summery of complexities:
