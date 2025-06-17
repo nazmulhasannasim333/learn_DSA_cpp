@@ -3,4 +3,4 @@
 3. square Root Time Complexity: O(√n) = O(sqrt(n))
 4. Linear Time Complexity: O(n)
 5. Linearithmic Time Complexity: O(n log n)
-6. Quadratic Time Complexity: O(n^2)
+6. Quadratic Time Complexity: O(n^2) = O(n*n)
