@@ -84,5 +84,6 @@ Problem 6:
         cin >> a[i];
     }
     sort(a,a+n);
-p6: O(n log n)
+ Ans 6: O(n log n)
+-------------------
 p7: O(n * n log n)
