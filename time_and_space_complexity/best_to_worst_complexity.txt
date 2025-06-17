@@ -2,3 +2,4 @@
 2. Logarithmic Time Complexity: O(log n)
 3. square Root Time Complexity: O(√n) = O(sqrt(n))
 4. Linear Time Complexity: O(n)
+5. Linearithmic Time Complexity: O(n log n)
