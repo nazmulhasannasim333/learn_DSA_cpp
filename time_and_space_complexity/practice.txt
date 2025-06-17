@@ -64,6 +64,25 @@ Problem 4:
     }
 Ans 4: O(n*n*n)
 -------------------
-p5: O(sqrt(n))
+Problem 5:
+    for(int i=0;i*i<n;i++)
+    {
+        sum += i;
+    }
+
+
+    for(int i=0;i<n;i++)
+    {
+        sum += i;
+        i*=k;
+    }
+Ans 5: O(sqrt(n))
+-------------------
+Problem 6:
+    for(int i=0;i<n;i++)
+    {
+        cin >> a[i];
+    }
+    sort(a,a+n);
 p6: O(n log n)
 p7: O(n * n log n)
