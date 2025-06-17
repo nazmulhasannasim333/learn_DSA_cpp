@@ -86,4 +86,9 @@ Problem 6:
     sort(a,a+n);
  Ans 6: O(n log n)
 -------------------
-p7: O(n * n log n)
+Problem 7:
+    for(int i=0;i<n;i++)
+    {
+        sort(a,a+n);
+    }
+Ans 7: O(n * n log n)
