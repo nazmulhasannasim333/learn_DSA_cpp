@@ -15,6 +15,8 @@ int main()
     return 0;
 }
 
+//  i * i <= n or i <= sqrt(n) is the square root complexity condition.
+
 // Summery of complexities:
 // O(1) + O(1) + O(sqrt(n)) + O(1) = O(sqrt(n))
 
