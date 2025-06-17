@@ -10,6 +10,12 @@ int main()
     {
         cout << i << endl;
     }
+    cout << "---------------------" << endl;
+
+    for (int i = n; i >= 1; i /= 2) // ---> O(log n)
+    {
+        cout << i << endl;
+    }
 
     return 0; // ---> O(1)
 }
