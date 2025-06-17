@@ -14,3 +14,7 @@ int main()
     }
     return 0;
 }
+
+// Summery of complexities:
+// O(1) + O(1) + O(n) + O(n) = O(n^2)
+// The overall time complexity of this code is O(n^2).
