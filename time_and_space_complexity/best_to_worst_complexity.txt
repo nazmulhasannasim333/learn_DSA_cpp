@@ -1,3 +1,4 @@
 1. Constant Time Complexity: O(1)
 2. Logarithmic Time Complexity: O(log n)
 3. square Root Time Complexity: O(√n) = O(sqrt(n))
+4. Linear Time Complexity: O(n)
