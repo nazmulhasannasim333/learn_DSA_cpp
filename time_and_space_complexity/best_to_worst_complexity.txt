@@ -1,1 +1,2 @@
 1. Constant Time Complexity: O(1)
+2. Logarithmic Time Complexity: O(log n)
