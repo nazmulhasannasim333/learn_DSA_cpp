@@ -40,7 +40,7 @@ Problem 3:
             j++;
         }
     }
-Ans 3: O(n * sqrt(n))//
+Ans 3: O(n * sqrt(n))
 -------------------
 p4: O(n*n*n)
 p5: O(sqrt(n))
