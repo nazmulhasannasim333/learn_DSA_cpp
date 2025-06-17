@@ -18,3 +18,6 @@ int main()
     return 0;
 }
 
+// Summery of complexities:
+// O(1) + O(1) + O(n) + O(log n) = O(n log n)
+// The overall time complexity of this code is O(n log n).
