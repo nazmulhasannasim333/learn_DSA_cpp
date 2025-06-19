@@ -23,6 +23,14 @@ int main()
     v.clear();                // Clear the vector
     cout << v.size() << endl; // Size is 0
     cout << v[0] << endl;
+    if (v.empty()) // Check if the vector is empty
+    {
+        cout << "Vector is empty" << endl;
+    }
+    else
+    {
+        cout << "Vector is not empty" << endl;
+    }
 
     return 0;
 }
