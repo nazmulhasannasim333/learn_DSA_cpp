@@ -1,4 +1,1 @@
-4
-0
-10
-Vector is empty
+10 20 
