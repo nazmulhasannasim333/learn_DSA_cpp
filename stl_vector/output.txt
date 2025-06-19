@@ -1,1 +1,2 @@
-100 2 100 4 3 6 
+Element found at index: 3
+3 2 3 4 3 6 
