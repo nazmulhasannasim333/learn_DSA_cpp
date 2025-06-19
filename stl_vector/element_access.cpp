@@ -7,6 +7,6 @@ int main()
     cout << v[3] << endl;      // Accessing the 4th element using operator[]
     cout << v.at(3) << endl;   // Accessing the 4th element using at()
     cout << v.front() << endl; // Accessing the first element
-    // cout << v.back() << endl;  // Accessing the last element
+    cout << v.back() << endl;  // Accessing the last element
     return 0;
 }
