@@ -31,7 +31,7 @@ int main()
     // {
     //     cout << "Vector is not empty" << endl;
     // }
-    v.resize(2); // Resize the vector to 2 elements
+    v.resize(7, 200); // Resize the vector
     for (int i = 0; i < v.size(); i++)
     {
         cout << v[i] << " "; // Print the elements of the vector
