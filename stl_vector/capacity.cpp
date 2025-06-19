@@ -15,6 +15,13 @@ int main()
     // cout << v.capacity() << endl;
     // v.push_back(10);
     // cout << v.capacity() << endl;
+    v.push_back(10);
+    v.push_back(10);
+    v.push_back(10);
+    v.push_back(10);
+    cout << v.size() << endl; // Size is 4
+    v.clear();                // Clear the vector
+    cout << v.size() << endl; // Size is 0
 
     return 0;
 }
