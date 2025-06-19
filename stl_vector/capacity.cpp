@@ -22,6 +22,7 @@ int main()
     cout << v.size() << endl; // Size is 4
     v.clear();                // Clear the vector
     cout << v.size() << endl; // Size is 0
+    cout << v[0] << endl;
 
     return 0;
 }
