@@ -1,2 +1,4 @@
-total_sum: 0
-Equilibrium index found at: 3
+YES
+NO
+YES
+YES
