@@ -25,10 +25,10 @@ int main()
     a->next = b;
     b->next = c;
 
-  while(head != NULL) {
-        cout << head->val << endl;
-        head = head->next;
-    }
+    cout << head->val << endl;
+    cout << head->next->val << endl;
+    cout << head->next->next->val << endl;
+    cout << head->next->next->next->val << endl;
 
     return 0;
 }
