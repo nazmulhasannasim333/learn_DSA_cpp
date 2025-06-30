@@ -4,7 +4,6 @@ using namespace std;
 void fun(int *p)
 {
     p = NULL;
-    cout << "fun " << p << endl;
 }
 
 int main()
