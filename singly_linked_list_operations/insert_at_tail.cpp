@@ -44,11 +44,11 @@ void print_list(Node *head)
 int main()
 {
     Node *head = NULL;
-    // Node *a = new Node(20);
-    // Node *b = new Node(30);
+    Node *a = new Node(20);
+    Node *b = new Node(30);
 
-    // head->next = a;
-    // a->next = b;
+    head->next = a;
+    a->next = b;
 
     insert_at_tail(head, 500);
 
