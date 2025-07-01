@@ -16,6 +16,11 @@ public:
 void insert_at_tail(Node *&head, int val)
 {
     Node *new_node = new Node(val);
+    if (head == NULL)
+    {
+        head = new_node;
+        return;
+    }
 
     Node *temp = head;
     while (temp->next != NULL)
@@ -38,12 +43,12 @@ void print_list(Node *head)
 
 int main()
 {
-    Node *head = new Node(10);
-    Node *a = new Node(20);
-    Node *b = new Node(30);
+    Node *head = NULL;
+    // Node *a = new Node(20);
+    // Node *b = new Node(30);
 
-    head->next = a;
-    a->next = b;
+    // head->next = a;
+    // a->next = b;
 
     insert_at_tail(head, 500);
 
