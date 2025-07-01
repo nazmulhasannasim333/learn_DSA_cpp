@@ -20,6 +20,8 @@ void insert_at_any_position(Node *&head, int idx, int val)
     for (int i = 1; i < idx; i++)
     {
         temp = temp->next;
+        if (temp == NULL)
+            return;
     }
     new_node->next = temp->next;
     temp->next = new_node;
