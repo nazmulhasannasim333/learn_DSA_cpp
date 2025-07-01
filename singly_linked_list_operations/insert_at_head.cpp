@@ -41,6 +41,8 @@ int main()
     a->next = b;
 
     insert_at_head(head, 500);
+    insert_at_head(head, 600);
+    insert_at_head(head, 700);
 
     print_list(head);
 
