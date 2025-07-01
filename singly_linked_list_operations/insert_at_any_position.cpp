@@ -13,20 +13,15 @@ public:
     }
 };
 
-void insert_at_tail(Node *&head, int val)
+void insert_at_any_position(Node *&head, int idx, int val)
 {
     Node *new_node = new Node(val);
-    if (head == NULL)
-    {
-        head = new_node;
-        return;
-    }
-
     Node *temp = head;
-    while (temp->next != NULL)
+    for (int i = 1; i < idx; i++)
     {
         temp = temp->next;
     }
+    new_node->next = temp->next;
     temp->next = new_node;
 }
 
@@ -43,14 +38,14 @@ void print_list(Node *head)
 
 int main()
 {
-    Node *head = new Node(10);
+    Node *head = NULL;
     Node *a = new Node(20);
     Node *b = new Node(30);
 
     head->next = a;
     a->next = b;
 
-    insert_at_tail(head, 500);
+    insert_at_any_position(head, 2, 500);
 
     print_list(head);
 
