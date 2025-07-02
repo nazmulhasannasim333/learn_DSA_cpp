@@ -33,7 +33,7 @@ void sort_linked_list(Node *&head)
     {
         for (Node *j = i->next; j != NULL; j = j->next)
         {
-            if (i->val > j->val)
+            if (i->val < j->val)
             {
                 swap(i->val, j->val);
             }
