@@ -27,6 +27,13 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = new_node;
 }
 
+void delete_at_head(Node *&head)
+{
+    Node *deleted_node = head;
+    head = head->next;
+    delete deleted_node;
+}
+
 void print_list(Node *head)
 {
     Node *temp = head;
@@ -50,6 +57,11 @@ int main()
             break;
         insert_at_tail(head, tail, val);
     }
+
+    delete_at_head(head);
+    delete_at_head(head);
+    delete_at_head(head);
+    delete_at_head(head);
 
     print_list(head);
 
