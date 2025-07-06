@@ -52,7 +52,7 @@ int main()
     tail->prev = b;
 
     print_forward(head);
-    // print_backward(tail);
+    print_backward(tail);
 
     return 0;
 }
