@@ -54,7 +54,7 @@ int main()
     b->next = tail;
     tail->prev = b;
 
-    // insert_at_head(head, 50);
+    insert_at_head(head, 50);
 
     print_forward(head);
 
