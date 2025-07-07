@@ -26,7 +26,7 @@ void delete_at_any_position(Node *head, int pos)
     }
     Node *delete_node = temp->next;
     temp->next = delete_node->next;
-    delete_node->next->prev = temp;
+    temp->next->prev = temp;
     delete delete_node;
 }
 
@@ -56,7 +56,6 @@ int main()
     b->next = tail;
     tail->prev = b;
 
-    delete_at_any_position(head, 1);
     delete_at_any_position(head, 1);
 
     print_forward(head);
