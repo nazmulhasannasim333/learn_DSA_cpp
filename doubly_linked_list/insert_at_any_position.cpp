@@ -15,7 +15,7 @@ public:
     }
 };
 
-void insert_at_any_pos(Node *&head, Node *&tail, int pos, int val)
+void insert_at_any_pos(Node *head, int pos, int val)
 {
     Node *new_node = new Node(val);
     Node *temp = head;
@@ -57,7 +57,7 @@ int main()
     b->next = tail;
     tail->prev = b;
 
-    insert_at_any_pos(head, tail, 2, 50);
+    insert_at_any_pos(head, 2, 50);
 
     print_forward(head);
 
