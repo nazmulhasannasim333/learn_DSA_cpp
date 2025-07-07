@@ -56,6 +56,7 @@ int main()
     b->next = tail;
     tail->prev = b;
 
+    delete_at_any_position(head, 1);
     delete_at_any_position(head, 2);
 
     print_forward(head);
