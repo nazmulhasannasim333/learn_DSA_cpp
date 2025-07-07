@@ -56,6 +56,7 @@ int main()
     tail->prev = b;
 
     insert_at_tail(head, tail, 50);
+    insert_at_tail(head, tail, 60);
 
     print_forward(head);
 
