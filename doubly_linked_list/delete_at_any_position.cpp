@@ -15,7 +15,7 @@ public:
     }
 };
 
-void delete_at_any_position(Node *&head, int pos)
+void delete_at_any_position(Node *head, int pos)
 {
     Node *temp = head;
     for (int i = 1; i < pos; i++)
