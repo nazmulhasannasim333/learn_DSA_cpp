@@ -57,7 +57,7 @@ int main()
     b->next = tail;
     tail->prev = b;
 
-    // insert_at_any_pos(head, tail, 2, 50);
+    insert_at_any_pos(head, tail, 2, 50);
 
     print_forward(head);
 
