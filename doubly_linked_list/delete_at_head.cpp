@@ -20,7 +20,7 @@ void delete_at_head(Node *&head, Node *&tail)
     Node *delete_node = head;
     head = head->next;
     delete delete_node;
-    if (head != NULL)
+    if (head == NULL)
     {
         tail = NULL;
         return;
