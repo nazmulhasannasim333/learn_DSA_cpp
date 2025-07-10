@@ -18,7 +18,8 @@ int main()
     // l.insert(next(l.begin(), 2), l2.begin(), l2.end());
     // l.insert(next(l.begin(), 2), v.begin(), v.end());
     // l.erase(next(l.begin(), 2), next(l.begin(), 5));
-    replace(l2.begin(), l2.end(), 10, 100);
+    // replace(l2.begin(), l2.end(), 10, 100);
+    
     for (int val : l2)
     {
         cout << val << " ";
