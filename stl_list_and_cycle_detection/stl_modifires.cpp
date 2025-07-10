@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     list<int> l = {1, 2, 3, 4, 5, 6};
-    list<int> l2 = {10, 20, 30, 40, 50, 60};
+    list<int> l2 = {10, 20, 30, 10, 50, 10};
     vector<int> v = {70, 80, 90};
     // list<int> l2;
     // l2 = l;
@@ -18,7 +18,8 @@ int main()
     // l.insert(next(l.begin(), 2), l2.begin(), l2.end());
     // l.insert(next(l.begin(), 2), v.begin(), v.end());
     // l.erase(next(l.begin(), 2), next(l.begin(), 5));
-    for (int val : l)
+    replace(l2.begin(), l2.end(), 10, 100);
+    for (int val : l2)
     {
         cout << val << " ";
     }
