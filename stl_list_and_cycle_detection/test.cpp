@@ -18,7 +18,7 @@ int main()
     // {
     //     cout << "List is not empty" << endl;
     // }
-    l.resize(3);
+    l.resize(10);
     for (int n : l)
     {
         cout << n << " ";
