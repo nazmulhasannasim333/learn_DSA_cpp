@@ -5,7 +5,8 @@ int main()
 {
     list<int> l = {10, 20, 30, 10, 50, 10};
     // l.remove(10);
-    l.sort();
+    // l.sort();
+    l.sort(greater<int>());
     for (int val : l)
     {
         cout << val << " ";
