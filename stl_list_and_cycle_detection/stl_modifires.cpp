@@ -19,15 +19,15 @@ int main()
     // l.insert(next(l.begin(), 2), v.begin(), v.end());
     // l.erase(next(l.begin(), 2), next(l.begin(), 5));
     // replace(l2.begin(), l2.end(), 10, 100);
-    auto it = find(l2.begin(), l2.end(), 10);
-    if (it == l2.end())
-    {
-        cout << "Element not found" << endl;
-    }
-    else
-    {
-        cout << "Element found: " << *it << endl;
-    }
+    // auto it = find(l2.begin(), l2.end(), 10);
+    // if (it == l2.end())
+    // {
+    //     cout << "Element not found" << endl;
+    // }
+    // else
+    // {
+    //     cout << "Element found: " << *it << endl;
+    // }
     for (int val : l2)
     {
         cout << val << " ";
