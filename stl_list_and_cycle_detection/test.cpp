@@ -7,10 +7,10 @@ int main()
     cout << l.size() << endl;
     cout << *l.begin() << endl;
     list<int> l2(10, 3);
-    // for (int n : l)
-    // {
-    //     cout << n << " ";
-    // }
+    for (int n : l)
+    {
+        cout << n << " ";
+    }
 
     return 0;
 }
