@@ -8,7 +8,7 @@ int main()
     // l2 = l;
     // l2.assign(l.begin(), l.end());
     l.push_back(7);
-    l.push_front(100);
+    // l.push_front(100);
     for (int val : l)
     {
         cout << val << " ";
