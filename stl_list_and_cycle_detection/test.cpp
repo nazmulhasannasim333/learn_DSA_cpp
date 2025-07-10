@@ -9,7 +9,7 @@ int main()
     // int a[] = {10, 20, 30};
     // vector<int> v = {10, 20, 30, 40, 50, 60};
     // list<int> l2(v.begin(), v.end());
-    l.clear();
+    // l.clear();
     if (l.empty())
     {
         cout << "List is empty" << endl;
