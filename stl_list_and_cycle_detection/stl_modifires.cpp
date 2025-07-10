@@ -10,6 +10,7 @@ int main()
     // l.push_back(7);
     // l.push_front(100);
     l.pop_back();
+    l.pop_front();
     for (int val : l)
     {
         cout << val << " ";
