@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     list<int> l = {1, 2, 3, 4, 5, 6};
+    list<int> l2 = {10, 20, 30, 40, 50, 60};
     // list<int> l2;
     // l2 = l;
     // l2.assign(l.begin(), l.end());
@@ -13,6 +14,7 @@ int main()
     // l.pop_front();
     // cout << *next(l.begin(), 2) << endl;
     // l.insert(next(l.begin(), 2), 100);
+    l.insert(next(l.begin(), 2), l2.begin(), l2.end());
     for (int val : l)
     {
         cout << val << " ";
