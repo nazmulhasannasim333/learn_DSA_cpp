@@ -7,9 +7,9 @@ int main()
     // cout << l.size() << endl;
     // cout << *l.begin() << endl;
     // int a[] = {10, 20, 30};
-    vector<int> v = {10, 20, 30, 40, 50, 60};
-    list<int> l2(v.begin(), v.end());
-    for (int n : l2)
+    // vector<int> v = {10, 20, 30, 40, 50, 60};
+    // list<int> l2(v.begin(), v.end());
+    for (int n : l)
     {
         cout << n << " ";
     }
