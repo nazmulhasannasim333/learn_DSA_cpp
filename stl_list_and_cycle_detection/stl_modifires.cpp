@@ -9,6 +9,7 @@ int main()
     // l2.assign(l.begin(), l.end());
     // l.push_back(7);
     // l.push_front(100);
+    l.pop_back();
     for (int val : l)
     {
         cout << val << " ";
