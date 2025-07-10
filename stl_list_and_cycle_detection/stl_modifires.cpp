@@ -11,9 +11,10 @@ int main()
     // l.push_front(100);
     // l.pop_back();
     // l.pop_front();
-    for (int val : l)
-    {
-        cout << val << " ";
-    }
+    cout << *next(l.begin(), 2) << endl;
+    // for (int val : l)
+    // {
+    //     cout << val << " ";
+    // }
     return 0;
 }
