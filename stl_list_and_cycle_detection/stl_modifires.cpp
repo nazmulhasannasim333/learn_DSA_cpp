@@ -7,7 +7,7 @@ int main()
     // list<int> l2;
     // l2 = l;
     // l2.assign(l.begin(), l.end());
-    l.push_back(7);
+    // l.push_back(7);
     // l.push_front(100);
     for (int val : l)
     {
