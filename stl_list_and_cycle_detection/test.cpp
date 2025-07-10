@@ -10,14 +10,15 @@ int main()
     // vector<int> v = {10, 20, 30, 40, 50, 60};
     // list<int> l2(v.begin(), v.end());
     // l.clear();
-    if (l.empty())
-    {
-        cout << "List is empty" << endl;
-    }
-    else
-    {
-        cout << "List is not empty" << endl;
-    }
+    // if (l.empty())
+    // {
+    //     cout << "List is empty" << endl;
+    // }
+    // else
+    // {
+    //     cout << "List is not empty" << endl;
+    // }
+    
     for (int n : l)
     {
         cout << n << " ";
