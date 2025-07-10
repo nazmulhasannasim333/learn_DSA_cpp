@@ -8,7 +8,7 @@ int main()
     // l.sort();
     // l.sort(greater<int>());
     // l.unique();
-    l.reverse();
+    // l.reverse();
     for (int val : l)
     {
         cout << val << " ";
