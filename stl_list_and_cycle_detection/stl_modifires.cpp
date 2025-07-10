@@ -12,6 +12,7 @@ int main()
     // l.pop_back();
     // l.pop_front();
     // cout << *next(l.begin(), 2) << endl;
+    l.insert(next(l.begin(), 2), 100);
     for (int val : l)
     {
         cout << val << " ";
