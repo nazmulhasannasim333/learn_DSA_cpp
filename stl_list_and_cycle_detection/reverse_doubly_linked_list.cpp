@@ -63,7 +63,7 @@ int main()
         }
         insert_at_tail(head, tail, val);
     }
-    // print_forward(head);
+    print_forward(head);
     reverse_doubly(head, tail);
     print_forward(head);
 
