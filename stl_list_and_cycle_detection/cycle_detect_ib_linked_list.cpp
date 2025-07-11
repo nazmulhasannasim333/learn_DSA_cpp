@@ -43,14 +43,14 @@ int main()
         }
     }
 
-    // if (cycle_detected)
-    // {
-    //     cout << "Cycle detected in the linked list." << endl;
-    // }
-    // else
-    // {
-    //     cout << "No cycle detected in the linked list." << endl;
-    // }
+    if (cycle_detected)
+    {
+        cout << "Cycle detected in the linked list." << endl;
+    }
+    else
+    {
+        cout << "No cycle detected in the linked list." << endl;
+    }
 
     return 0;
 }
