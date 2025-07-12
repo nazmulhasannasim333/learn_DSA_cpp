@@ -31,15 +31,16 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
 
 void check_plaindom(Node *head, Node *tail)
 {
+    bool is_palindrome = true;
     for (Node *i = head, *j = tail; i != j && i->prev != j; i = i->next, j = j->prev)
     {
         if (i->val != j->val)
         {
-            cout << "NO" << endl;
-            return;
+            is_palindrome = false;
+            break;
         }
     }
-    cout << "YES" << endl;
+    cout << (is_palindrome ? "YES" : "NO") << endl;
 }
 
 int main()
