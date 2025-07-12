@@ -15,54 +15,6 @@ public:
     }
 };
 
-bool insert_at_pos(Node *&head, Node *&tail, int pos, int val)
-{
-    int count = 0;
-    Node *temp = head;
-    while (temp != NULL)
-    {
-        count++;
-        temp = temp->next;
-    }
-    if (pos < 0 || pos > count)
-    {
-        return false;
-    }
-    Node *new_node = new Node(val);
-    if (pos == 0)
-    {
-        if (head == NULL)
-        {
-            head = new_node;
-            tail = new_node;
-        }
-        else
-        {
-            new_node->next = head;
-            head->prev = new_node;
-            head = new_node;
-        }
-    }
-    else if (pos == count)
-    {
-        tail->next = new_node;
-        new_node->prev = tail;
-        tail = new_node;
-    }
-    else
-    {
-        Node *curr = head;
-        for (int i = 1; i < pos; i++)
-        {
-            curr = curr->next;
-        }
-        new_node->next = curr->next;
-        new_node->prev = curr;
-        curr->next->prev = new_node;
-        curr->next = new_node;
-    }
-}
-
 void print_forward(Node *head)
 {
     Node *temp = head;
