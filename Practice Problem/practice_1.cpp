@@ -67,7 +67,7 @@ int main()
     {
         insert_at_tail(head2, tail2, val2);
     }
-    // check_same(head1, head2);
+    check_same(head1, head2);
 
     return 0;
 }
