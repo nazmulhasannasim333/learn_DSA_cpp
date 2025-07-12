@@ -50,6 +50,7 @@ int main()
     {
         insert_at_tail(head1, tail1, val1);
     }
+    print_list(head1);
 
     return 0;
 }
