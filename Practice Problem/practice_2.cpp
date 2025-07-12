@@ -29,6 +29,14 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = new_node;
 }
 
+void reverse_double_linked_list(Node *&head, Node *&tail)
+{
+    for (Node *i = head, *j = tail; i != j && i->prev != j; i = i->next, j = j->prev)
+    {
+        swap(i->val, j->val);
+    }
+}
+
 void print_list(Node *head)
 {
     Node *temp = head;
@@ -50,6 +58,9 @@ int main()
     {
         insert_at_tail(head1, tail1, val1);
     }
+
+    reverse_double_linked_list(head1, tail1);
+
     print_list(head1);
 
     return 0;
