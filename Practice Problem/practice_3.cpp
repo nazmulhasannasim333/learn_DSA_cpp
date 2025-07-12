@@ -55,5 +55,7 @@ int main()
         insert_at_tail(head, tail, val);
     }
 
+    check_plaindom(head, tail);
+
     return 0;
 }
