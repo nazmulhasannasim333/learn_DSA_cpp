@@ -35,7 +35,7 @@ void sort_ascending(Node *head)
     {
         for (Node *j = i->next; j != NULL; j = j->next)
         {
-            if (i->val > j->val)
+            if (i->val < j->val)
             {
                 swap(i->val, j->val);
             }
@@ -43,7 +43,7 @@ void sort_ascending(Node *head)
     }
 }
 
-void print_forward(Node *head)
+void print_doubly_linked_list(Node *head)
 {
     Node *temp = head;
     while (temp != NULL)
@@ -67,7 +67,7 @@ int main()
         insert_at_tail(head, tail, val);
     }
     sort_ascending(head);
-    print_forward(head);
+    print_doubly_linked_list(head);
 
     return 0;
 }
