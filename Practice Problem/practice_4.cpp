@@ -49,18 +49,18 @@ bool insert_at_pos(Node *&head, Node *&tail, int pos, int val)
         new_node->prev = tail;
         tail = new_node;
     }
-    // else
-    // {
-    //     Node *curr = head;
-    //     for (int i = 1; i < pos; i++)
-    //     {
-    //         curr = curr->next;
-    //     }
-    //     new_node->next = curr->next;
-    //     new_node->prev = curr;
-    //     curr->next->prev = new_node;
-    //     curr->next = new_node;
-    // }
+    else
+    {
+        Node *curr = head;
+        for (int i = 1; i < pos; i++)
+        {
+            curr = curr->next;
+        }
+        new_node->next = curr->next;
+        new_node->prev = curr;
+        curr->next->prev = new_node;
+        curr->next = new_node;
+    }
 }
 
 void print_forward(Node *head)
