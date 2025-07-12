@@ -29,8 +29,18 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = new_node;
 }
 
-void sort_ascending(Node *head, Node *tail)
+void sort_ascending(Node *head)
 {
+    for (Node *i = head; i != NULL; i = i->next)
+    {
+        for (Node *j = i->next; j != NULL; j = j->next)
+        {
+            if (i->val > j->val)
+            {
+                swap(i->val, j->val);
+            }
+        }
+    }
 }
 
 void print_forward(Node *head)
@@ -56,7 +66,7 @@ int main()
             break;
         insert_at_tail(head, tail, val);
     }
-    // sort_ascending(head, tail);
+    sort_ascending(head);
     print_forward(head);
 
     return 0;
