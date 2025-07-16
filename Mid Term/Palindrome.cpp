@@ -29,23 +29,18 @@ void insert_at_tail(Node *&head, Node *&tail, int val)
     tail = new_node;
 }
 
-void remove_duplicate(Node *&head)
+void check_plaindom(Node *head, Node *tail)
 {
-    Node *tmp = head;
-    list<int> values;
-    while (tmp != NULL)
+    bool is_palindrome = true;
+    for (Node *i = head, *j = tail; i != j && i->prev != j; i = i->next, j = j->prev)
     {
-        values.push_back(tmp->val);
-        tmp = tmp->next;
+        if (i->val != j->val)
+        {
+            is_palindrome = false;
+            break;
+        }
     }
-
-    values.sort();
-    values.unique();
-
-    for (int value : values)
-    {
-        cout << value << " ";
-    }
+    cout << (is_palindrome ? "YES" : "NO") << endl;
 }
 
 int main()
@@ -62,7 +57,7 @@ int main()
         insert_at_tail(head, tail, val);
     }
 
-    remove_duplicate(head);
+    check_plaindom(head, tail);
 
     return 0;
 }
