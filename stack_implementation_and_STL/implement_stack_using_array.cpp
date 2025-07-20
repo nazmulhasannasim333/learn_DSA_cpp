@@ -1,34 +1,47 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class Stack {
-    public:
+class Stack
+{
+public:
     vector<int> v;
 
-    void push(int val){
+    void push(int val)
+    {
         v.push_back(val);
     }
-    void pop(){
+    void pop()
+    {
         v.pop_back();
     }
-    int top(){
+    int top()
+    {
         return v.back();
     }
-    bool empty(){
+    bool empty()
+    {
         return v.empty();
     }
-    int size(){
+    int size()
+    {
         return v.size();
     }
 };
 
-int main(){
+int main()
+{
     Stack s;
-    s.push(10);
-    s.push(20);
-    s.push(30);
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int x;
+        cin >> x;
+        s.push(x);
+    }
 
-    while(!s.empty()){
+    while (!s.empty())
+    {
         cout << s.top() << " ";
         s.pop();
     }
