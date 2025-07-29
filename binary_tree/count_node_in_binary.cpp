@@ -75,6 +75,6 @@ int main()
 {
     Node *root = inputTree();
     int nodeCount = countNodes(root);
-    cout << "Total number of nodes in the binary tree: " << nodeCount << endl;
+    cout << "Total  nodes : " << nodeCount << endl;
     return 0;
 }
