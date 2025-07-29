@@ -1,1 +1,1 @@
-Total  nodes : 9
+Total leaf nodes : 4
