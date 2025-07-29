@@ -42,6 +42,7 @@ int main()
     a->right = c;
     c->left = d;
     c->right = e;
+
     root->right = f;
     f->left = g;
     g->left = h;
