@@ -17,6 +17,11 @@ public:
 
 void levelOrderTraversal(Node *root)
 {
+    if (root == NULL)
+    {
+        cout << "Tree is empty." << endl;
+        return;
+    }
     queue<Node *> q;
     q.push(root);
 
