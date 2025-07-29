@@ -1,1 +1,1 @@
-Tree is empty.
+Total number of nodes in the binary tree: 9
