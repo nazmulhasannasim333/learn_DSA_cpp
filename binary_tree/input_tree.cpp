@@ -43,9 +43,14 @@ Node *inputTree()
 {
     int val;
     cin >> val;
-    Node *root = new Node(val);
+    Node *root;
+    if (val == -1)
+        root = NULL;
+    else
+        root = new Node(val);
     queue<Node *> q;
-    q.push(root);
+    if (root)
+        q.push(root);
 
     while (!q.empty())
     {
