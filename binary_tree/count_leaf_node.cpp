@@ -77,6 +77,6 @@ int main()
 {
     Node *root = inputTree();
     int leafCount = countLeafNodes(root);
-    cout << "Total leaf nodes : " << leafCount << endl;
+    cout << "Count of total leaf nodes : " << leafCount << endl;
     return 0;
 }
