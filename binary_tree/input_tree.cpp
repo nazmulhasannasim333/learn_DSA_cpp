@@ -1,0 +1,89 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+class Node
+{
+public:
+    int val;
+    Node *left;
+    Node *right;
+    Node(int val)
+    {
+        this->val = val;
+        this->left = NULL;
+        this->right = NULL;
+    }
+};
+
+void levelOrderTraversal(Node *root)
+{
+    queue<Node *> q;
+    q.push(root);
+
+    while (!q.empty())
+    {
+        // 1. get the front node and pop it
+        Node *f = q.front();
+        q.pop();
+
+        // 2. print the value of the front node
+        cout << f->val << " ";
+
+        // 3. push the left child of the front node into the queue
+        if (f->left)
+            q.push(f->left);
+
+        // 4. push the right child of the front node into the queue
+        if (f->right)
+            q.push(f->right);
+    }
+}
+
+Node *inputTree()
+{
+    int val;
+    cin >> val;
+    Node *root = new Node(val);
+    queue<Node *> q;
+    q.push(root);
+
+    while (!q.empty())
+    {
+        // 1. get the front node and pop it
+        Node *p = q.front();
+        q.pop();
+
+        int l, r;
+        cin >> l >> r;
+
+        // 2. create the left and right child nodes
+        Node *leftChild, *rightChild;
+        if (l == -1)
+            leftChild = NULL;
+        else
+            leftChild = new Node(l);
+
+        if (r == -1)
+            rightChild = NULL;
+        else
+            rightChild = new Node(r);
+
+        // 3. assign the left and right child nodes to the current node
+        p->left = leftChild;
+        p->right = rightChild;
+
+        // 4. push the left and right child nodes into the queue
+        if (p->left)
+            q.push(leftChild);
+        if (p->right)
+            q.push(rightChild);
+    }
+    return root;
+}
+
+int main()
+{
+    Node *root = inputTree();
+    levelOrderTraversal(root);
+    return 0;
+}
