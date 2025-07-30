@@ -78,7 +78,8 @@ int getMaxHeight(Node *root)
 int main()
 {
     Node *root = inputTree();
-    cout << "Maximum height of the tree: " << getMaxHeight(root) << endl;
+    int maxHeight = getMaxHeight(root);
+    cout << "Maximum height of the tree: " << maxHeight << endl;
 
     return 0;
 }
