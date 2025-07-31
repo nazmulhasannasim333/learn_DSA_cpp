@@ -1,1 +1,2 @@
-Maximum height of the tree: 3
+First element of p2: 30
+Second element of p2: 40
