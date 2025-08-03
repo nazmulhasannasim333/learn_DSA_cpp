@@ -1,1 +1,5 @@
-Total leaf nodes : 4
+First: 3, Second: 5
+First: 2, Second: 4
+First: 4, Second: 8
+First: 2, Second: 7
+First: 8, Second: 3
