@@ -89,6 +89,7 @@ void insert(Node *&root, int val)
         root = new Node(val);
         return;
     }
+
     if (val < root->val)
         insert(root->left, val);
     else
