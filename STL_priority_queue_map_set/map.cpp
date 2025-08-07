@@ -12,7 +12,7 @@ int main()
     {
         cout << it.first << " " << it.second << endl;
     }
-    if (mp["Nasim"])
+    if (mp.count("Nasim"))
         cout << "Found Nasim with marks: " << mp["Nasim"] << endl;
     else
         cout << "Nasim not found" << endl;
