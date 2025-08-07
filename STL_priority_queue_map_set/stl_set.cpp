@@ -1,17 +1,28 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+int main()
+{
     set<int> s;
     int n;
     cin >> n;
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++)
+    {
         int x;
         cin >> x;
         s.insert(x);
     }
-    for(auto it : s){
-        cout << it << " ";
+    for (auto it : s)
+    {
+        cout << it << endl;
+    }
+    if (s.count(5))
+    {
+        cout << "Found 5 in the set." << endl;
+    }
+    else
+    {
+        cout << "5 not found in the set." << endl;
     }
     return 0;
 }
