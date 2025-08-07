@@ -1,3 +1,5 @@
-Nazmul 2 85
-Nasim 1 90
-Hasan 3 90
+Hasan 90
+Nasim 90
+Nazmul 85
+Rafiq 95
+Found Nasim with marks: 90
