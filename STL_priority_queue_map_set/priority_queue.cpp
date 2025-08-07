@@ -10,5 +10,6 @@ int main(){
     pq.push(5);
 
     cout << pq.top() << endl;
+    cout << pq.size() << endl;
     return 0;
 }
