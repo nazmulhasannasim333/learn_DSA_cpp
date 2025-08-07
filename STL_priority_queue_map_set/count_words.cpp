@@ -14,7 +14,7 @@ int main()
     }
     for (auto it : wordCount)
     {                                                 // O(NlogN)
-        cout << it.first << " " << it.second << endl; 
+        cout << it.first << " " << it.second << endl; // O(logN)
     }
     return 0;
 }
