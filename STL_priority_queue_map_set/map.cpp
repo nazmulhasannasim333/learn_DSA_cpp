@@ -12,9 +12,9 @@ int main()
     {
         cout << it.first << " " << it.second << endl;
     }
-    // if (mp["Nasim"])
-    //     cout << "Found Nasim with marks: " << mp["Nasim"] << endl;
-    // else
-    //     cout << "Nasim not found" << endl;
+    if (mp["Nasim"])
+        cout << "Found Nasim with marks: " << mp["Nasim"] << endl;
+    else
+        cout << "Nasim not found" << endl;
     return 0;
 }
