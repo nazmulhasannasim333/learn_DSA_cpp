@@ -1,5 +1,7 @@
-Hasan 90
-Nasim 90
-Nazmul 85
-Rafiq 95
-Found Nasim with marks: 90
+I 1
+he 1
+love 3
+loves 1
+programming 4
+they 1
+we 1
