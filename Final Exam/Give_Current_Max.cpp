@@ -5,15 +5,13 @@ class Student
 {
 public:
     string name;
-    int age;
+    int roll;
     int marks;
-
     Student() {}
-
-    Student(string name, int age, int marks)
+    Student(string name, int roll, int marks)
     {
         this->name = name;
-        this->age = age;
+        this->roll = roll;
         this->marks = marks;
     }
 };
@@ -21,11 +19,11 @@ public:
 class cmp
 {
 public:
-    bool operator()(Student l, const Student r)
+    bool operator()(const Student &l, const Student &r) const
     {
-        if (l.marks == r.marks)
-            return l.age > r.age;
-        return l.marks < r.marks;
+        if (l.marks != r.marks)
+            return l.marks < r.marks;
+        return l.roll > r.roll;
     }
 };
 
@@ -39,9 +37,9 @@ int main()
     for (int i = 0; i < n; i++)
     {
         string name;
-        int age, marks;
-        cin >> name >> age >> marks;
-        pq.push(Student(name, age, marks));
+        int roll, marks;
+        cin >> name >> roll >> marks;
+        pq.push(Student(name, roll, marks));
     }
 
     int q;
@@ -53,14 +51,13 @@ int main()
         if (cmd == 0)
         {
             string name;
-            int age, marks;
-            cin >> name >> age >> marks;
-            pq.push(Student(name, age, marks));
-
+            int roll, marks;
+            cin >> name >> roll >> marks;
+            pq.push(Student(name, roll, marks));
             if (!pq.empty())
             {
                 Student s = pq.top();
-                cout << s.name << " " << s.age << " " << s.marks << endl;
+                cout << s.name << " " << s.roll << " " << s.marks << endl;
             }
             else
                 cout << "Empty" << endl;
@@ -70,24 +67,20 @@ int main()
             if (!pq.empty())
             {
                 Student s = pq.top();
-                cout << s.name << " " << s.age << " " << s.marks << endl;
+                cout << s.name << " " << s.roll << " " << s.marks << endl;
             }
             else
                 cout << "Empty" << endl;
         }
         else if (cmd == 2)
         {
+            // After 3 hours of debugging, i finally found the issue here
             if (!pq.empty())
-            {
                 pq.pop();
-                if (!pq.empty())
-                {
-                    Student s = pq.top();
-                    cout << s.name << " " << s.age << " " << s.marks << endl;
-                }
-                else
-                    cout << "Empty" << endl;
-            }
+            if (!pq.empty())
+                cout << pq.top().name << " " << pq.top().roll << " " << pq.top().marks << endl;
+            else
+                cout << "Empty" << endl;
         }
     }
 
